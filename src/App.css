@@ -1,0 +1,160 @@
+.App {
+  height: 100vh;
+  text-align: center;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+.main {
+  margin: 0px 200px;
+  display: flex;
+  height: calc(100% - 80px);
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+.buttonSection {
+  width: 50%;
+}
+.floorButtons {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.navigateBtnsSection {
+  margin: 0px 20px;
+}
+.building {
+  align-items: center;
+  display: flex;
+}
+.building button {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: 0px;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+}
+.arrow {
+  border-color: #000000;
+}
+.btn.btnUp {
+  margin-bottom: 3px;
+}
+.buildingFloor {
+  margin: 0px 0px 1px 0px;
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border: 5px outset #000000;
+}
+.previewMain {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.elevatorSpot {
+  margin-left: 5px;
+  position: relative;
+}
+.elevator {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 70px;
+  height: 82px;
+}
+.closeElevator {
+  background: #000000;
+  color: #ffffff;
+}
+.openElevator {
+  background: #666666;
+  color: #ffffff;
+}
+
+.btnHighlight {
+  color: #ffffff;
+  background-color: rgb(0, 128, 0);
+}
+
+.btnNormal {
+  color: #000000;
+  background-color: #dddddd;
+}
+.highlightArrowBtn {
+  background-color: green !important;
+  border: 3px solid green !important;
+}
+
+.floorButtons button {
+  font-size: 4rem;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  border: 10px solid #000000;
+}
+.preview {
+  text-align: center;
+  width: 50%;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .main {
+    margin: 0px;
+  }
+  .floorButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .floorButtons button {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main {
+    margin: 0px;
+  }
+  .floorButtons {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .buttonSection {
+    width: 30%;
+  }
+  .floorButtons button {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
+  }
+}
